@@ -6,9 +6,8 @@ var timeleft = 10;
 //timer function
 var gameTimer = setInterval(function(){
 
-   
 
-  document.getElementById("timer").innerHTML = timeleft;
+  document.querySelector("#timer").innerHTML = timeleft;
 
   timeleft -= 1; 
 
@@ -16,7 +15,7 @@ var gameTimer = setInterval(function(){
 
     clearInterval(gameTimer);
 
-    document.getElementById("timer").innerHTML = "Pencils Down!";
+    document.querySelector("#timer").innerHTML = "Pencils Down!";
 
     window.open("results.html", "_self");
 
