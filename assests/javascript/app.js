@@ -8,8 +8,11 @@ var gameTimer = setInterval(function(){
 
   if(timeleft <= -2){
     clearInterval(gameTimer);
+
     document.getElementById("timer").innerHTML = "Pencils Down!"
     
+    window.open("results.html", "replace")
+
   }
 
 }, 1000);
