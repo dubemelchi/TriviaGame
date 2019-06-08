@@ -1,12 +1,46 @@
 body{
-  background-image: url(../images/question-marks\ 2.jpg);
+  background-image: url(../images/question-marks\ 2.jpg)
 }
 
 
-.container{
+.container1{
 margin: auto;
-width: 960px;
-height: 610px;
+width: 500px;
+height: 250px;
+background-color: whitesmoke;
+text-align: center;
 
+}
+
+.container2{
+margin: auto;
+width: 500px;
+height: 700px;
+background-color: whitesmoke;
+text-align: center;
+
+}
+
+
+.container3{
+margin-top: 100px;
+margin: auto;
+width: 500px;
+height: 450px;
+background-color: whitesmoke;
+text-align: center;
+padding: 50px;
+
+}
+
+.starter{
+  text-decoration-line: none;
+  padding: 25px;
+  font-size: 35px;
+  
+}
+
+h1{
+  margin: 50px;
 
 }
