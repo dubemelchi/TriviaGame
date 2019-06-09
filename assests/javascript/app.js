@@ -11,9 +11,11 @@ var gameTimer = setInterval(function(){
 
     clearInterval(gameTimer);
     
+    qandA()
+
     window.open("results.html", "_self");
 
-    qandA()
+    
 
   }
 

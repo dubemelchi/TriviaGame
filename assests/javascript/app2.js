@@ -39,6 +39,9 @@ function qandA (){
   }else{
     incorrect++;
   }
+
+  
+
 console.log(q1);
 console.log(correct);
 console.log(incorrect);
