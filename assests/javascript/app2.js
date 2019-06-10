@@ -1,4 +1,5 @@
 
+
 function qandA (){
 
   var q1 = document.trivia.q1.value;
@@ -40,9 +41,13 @@ function qandA (){
     incorrect++;
   }
 
-  
-
-console.log(q1);
 console.log(correct);
 console.log(incorrect);
+
+$("#correct").text(correct);
+$("#incorrect").text(incorrect);
+
 }
+
+
+

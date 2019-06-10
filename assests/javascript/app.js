@@ -1,5 +1,14 @@
-//timer variable
+$(document).ready(function(){
+
+
 var timeleft = 10;
+
+var correct = 0;
+
+ if(timeleft <=10){
+
+    $("#results").hide();
+  }
 
 //timer function
 var gameTimer = setInterval(function(){
@@ -7,15 +16,23 @@ var gameTimer = setInterval(function(){
   document.querySelector("#timer").innerHTML = timeleft;
   timeleft -= 1; 
 
+ // if(timeleft <=10){
+
+    //$("#results").hide();
+  //}
+
   if(timeleft <= -1){
 
     clearInterval(gameTimer);
     
-    qandA()
-
-    window.open("results.html", "_self");
-
     
+  $("#Trivia").hide();
+
+  $("#clock").hide();
+
+  $("#results").show();
+
+  qandA();
 
   }
 
@@ -23,4 +40,6 @@ var gameTimer = setInterval(function(){
 
 
 
+
+})
 
