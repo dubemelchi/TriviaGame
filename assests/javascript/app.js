@@ -5,21 +5,18 @@ var timeleft = 10;
 
 var correct = 0;
 
- if(timeleft <=10){
+if(timeleft <=10){
 
-    $("#results").hide();
-  }
+  $("#results").hide();
+}
 
 //timer function
 var gameTimer = setInterval(function(){
 
-  document.querySelector("#timer").innerHTML = timeleft;
+  $("#timer").html(timeleft);
+
   timeleft -= 1; 
 
- // if(timeleft <=10){
-
-    //$("#results").hide();
-  //}
 
   if(timeleft <= -1){
 
