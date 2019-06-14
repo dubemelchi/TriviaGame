@@ -5,6 +5,8 @@ var timeleft = 10;
 
 var correct = 0;
 
+var total = 6;
+
 if(timeleft <=10){
 
   $("#results").hide();

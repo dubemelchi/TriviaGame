@@ -11,6 +11,8 @@ function qandA (){
   var correct = 0;
   var incorrect =0;
 
+  
+
   if(q1 == "false"){
     correct++;
   }else{
@@ -41,11 +43,21 @@ function qandA (){
     incorrect++;
   }
 
+  var totalQ = 5;
+
+  var totalAnswered = correct + incorrect;
+
+  var unanswered = totalQ - totalAnswered;
+
 console.log(correct);
 console.log(incorrect);
+console.log(totalAnswered);
+console.log(unanswered);
+
 
 $("#correct").text(correct);
 $("#incorrect").text(incorrect);
+$("#unanswered").text(unanswered);
 
 }
 
