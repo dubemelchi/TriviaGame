@@ -10,48 +10,60 @@ function qandA (){
 
   var correct = 0;
   var incorrect =0;
+  var unanswered =0;
 
   
 
   if(q1 == "false"){
     correct++;
-  }else{
+  }else if(q1 == "true"){
     incorrect++;
+  }else{
+    unanswered++;
   }
+
 
   if(q2 == "true"){
     correct++;
-  }else{
+  }else if(q2 == "false"){
     incorrect++;
+  }else{
+    unanswered++;
   }
 
   if(q3 == "true"){
     correct++;
-  }else{
+  }else if(q3 == "false"){
     incorrect++;
+  }else{
+    unanswered++;
   }
 
   if(q4 == "false"){
     correct++;
-  }else{
+  }else if(q4 == "true"){
     incorrect++;
+  }else{
+    unanswered++;
   }
 
   if(q5 == "false"){
     correct++;
-  }else{
+  }else if(q5 == "true"){
     incorrect++;
+  }else{
+    unanswered++;
   }
 
-  var totalQ = 5;
+  //var totalQ = 5;
 
-  var totalAnswered = correct + incorrect;
+  //var totalAnswered = correct + incorrect;
 
-  var unanswered = totalQ - totalAnswered;
+  //var unanswered = totalQ - totalAnswered;
 
 console.log(correct);
 console.log(incorrect);
-console.log(totalAnswered);
+//console.log(totalAnswered);
 console.log(unanswered);
 
 
